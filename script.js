@@ -10,20 +10,6 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// Simple login mechanism (replace with server-side authentication in production)
-document.getElementById('login-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-
-  // Replace with actual authentication logic
-  if (username === 'admin' && password === '123') {
-    document.getElementById('login-overlay').style.display = 'none';
-    document.querySelector('.planner-container').style.display = 'block';
-  } else {
-    alert('Invalid credentials. Please try again.');
-  }
-});
 
 document.addEventListener('DOMContentLoaded', function () {
   const taskList = document.getElementById('task-list');
