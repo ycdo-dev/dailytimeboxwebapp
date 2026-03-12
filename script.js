@@ -17,7 +17,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
   const password = document.getElementById('password').value;
 
   // Replace with actual authentication logic
-  if (username === 'admin' && password === 'password') {
+  if (username === 'admin' && password === '123') {
     document.getElementById('login-overlay').style.display = 'none';
     document.querySelector('.planner-container').style.display = 'block';
   } else {
